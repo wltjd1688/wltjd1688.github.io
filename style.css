@@ -29,6 +29,10 @@ main{
 
 footer{
     background-color: wheat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 10vw;
 }
 
 a{
@@ -129,7 +133,6 @@ nav > ol > li {
 .main-button{
     padding: 14px;
     font-size: 12px;
-    max-width: 140px;
     height: 40px;
     text-align: center;
     background-color: rgb(149, 208, 241);
@@ -137,15 +140,19 @@ nav > ol > li {
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    white-space: nowrap;
+
 }
 
 .main-button:hover{
+    padding: 13px;
     color: rgb(149, 208, 241);
     background-color: white;
     border: 1px solid rgb(149, 208, 241);
 }
 
 .main-button:active{
+    padding: 13px;
     color: white;
     background-color:rgb(99, 137, 159);
     border: 1px solid rgb(99, 137, 159);
@@ -173,7 +180,7 @@ nav > ol > li {
 
 .project-card{
     padding:20px;
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 2px solid #aaaaaa;
     border-radius: 10px;
 }
 
