@@ -3,40 +3,138 @@
     margin: 0;
 }
 
-/* 구분 색칠 */
-header{
-    background-color: lightblue;
+body {
+    background-color: #eeeeee;
 }
 
-main{
-    background-color: gray
+header{
+    background-color: rgba(220, 241, 248, 0.5);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
 }
+
 
 footer{
     background-color: wheat;
     height:100vh;
 }
-/*=======*/
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 30px 20px;
+a{
+    padding-left:10px;
+    color: black;
+    text-decoration: none;
 }
 
-.navbar > h3 {
+/* ============== */
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+nav > h3 {
     margin: 0;
 }
 
-.navbar > ol {
+nav > ol {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;  
 }
 
-.navbar >nav > ol > li {
-    margin: 0 10px;
+.greeting {
+    display: flex;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.greeting-text-div {
+    margin-right: 20px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gretting-subtext{
+    font-size: 14px;
+    color: grey
+}
+
+.greeting > img {
+    width: 40vw;
+    background-color: black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.social-media-div{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.github-button{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/github.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.velog-button{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/velog.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.gmail-button{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/gmail.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+
+.gretting-button{
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.main-button{
+    font-size: 12px;
+    min-width: 120px;
+    height: 40px;
+    background-color: #96e4fa;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-button:hover{
+    color: #96e4fa;
+    background-color: white;
+    border: 1px solid #96e4fa;
+}
+
+.main-button:active{
+    color: white;
+    background-color:#6499a7;
+    border: 1px solid #6499a7;
 }
