@@ -32,7 +32,6 @@ footer{
 }
 
 a{
-    padding-left:10px;
     color: black;
     text-decoration: none;
 }
@@ -54,6 +53,10 @@ nav > ol {
     list-style: none;
     margin: 0;
     padding: 0;  
+}
+
+nav > ol > li {
+    margin-right: 10px;
 }
 
 .greeting {
@@ -124,9 +127,11 @@ nav > ol {
 }
 
 .main-button{
+    padding: 14px;
     font-size: 12px;
-    min-width: 120px;
+    width: 120px;
     height: 40px;
+    text-align: center;
     background-color: rgb(149, 208, 241);
     border: none;
     border-radius: 5px;
@@ -177,4 +182,8 @@ nav > ol {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.project-button{
+    padding-top: 14px
 }
