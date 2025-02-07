@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 구분 색칠 */
+header{
+    background-color: lightblue;
+}
+
+main{
+    background-color: gray
+}
+
+footer{
+    background-color: wheat;
+    height:100vh;
+}
+/*=======*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 30px 20px;
+}
+
+.navbar > h3 {
+    margin: 0;
+}
+
+.navbar > ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+
+.navbar >nav > ol > li {
+    margin: 0 10px;
+}
