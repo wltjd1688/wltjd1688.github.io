@@ -8,38 +8,38 @@
     </head>
 
     <body>
-        <header>   <!-- 여기는 nav -->
-
+        <header name="header">   
+            <!-- 여기는 nav -->
             <h3 class="logo"><a href="/">Jiseong's Portfolio<a></h3>
             <nav> 
                 <ol class="menu">
                     <li id="menu1"><a href="#">Abuout Me</a></li>
-                    <li id="menu2"><a href="#">Project</a></li>
-                    <li id="menu3"><a href="#">Connect</a></li>
+                    <li id="menu2"><a href="#project">Project</a></li>
+                    <li id="menu3"><a href="#connect">Connect</a></li>
                 </ol>
             </nav>
-
         </header>
         <main>
-
-            <div class="greeting">    <!-- 여기는 나 소개 -->
+            <!-- 소개 -->
+            <div class="greeting">    
                 <div class="greeting-text-div">
                     <h2 class="greeting-text">도전하는 개발자 김지성입니다</h2>
                     <p class="gretting-subtext">Javascript를 주 언어로 사용하는 풀스택 개발자 입니다.</p>
                     <div class="social-media-div">
-                        <a class="github-button" href="">깃허브</a>
-                        <a class="velog-button" href="">빌로그</a>
-                        <a class="gmail-button" href="">지메일</a>
+                        <a class="github-button" href="https://github.com/wltjd1688" target="_blank">깃허브</a>
+                        <a class="velog-button" href="https://velog.io/@wltjd1688/posts" target="_blank">빌로그</a>
+                        <a class="gmail-button"  href="mailto:wltjd1688@gmail.com">지메일</a>
                     </div>
                     <div class="gretting-button">
-                        <button class="main-button" onclick="alert('아직 연결된게 없습니다.')"> CONTACT ME </button>
+                        <!--<button class="main-button" onclick="alert('아직 연결된게 없습니다.')"> CONTACT ME </button>-->
                         <button class="main-button" onclick="alert('아직 연결된게 없습니다.')"> SEE MY RESUME </button>
                     </div>
                 </div>
                 <img src="https://dummyimage.com/500x500.png"/>
             </div>
-
-            <div class="project-div"> <!-- 프로젝트 정리 -->
+            <!-- 프로젝트 정리 -->
+            <div id="project"><!-- 이동위치 --></div>
+            <div class="project-div">
                 <h2 class="project-text">Project</h2>
                 <div class="project-list">
                     <div class="project-card" id="1">
@@ -68,16 +68,15 @@
                     </div>
                 </div>
             </div>
-
         </main>
         <footer>
-
-            <div class="connect-div"> <!-- 커넥트 -->
+            <!-- 커넥트 -->
+            <div id="connect" class="connect-div"> 
                 <h2 class="connect-text">Connect</h2>
                 <div class="social-media-div" style="justify-content:center">
-                    <a class="github-button" href="">깃허브</a>
-                    <a class="velog-button" href="">빌로그</a>
-                    <a class="gmail-button" href="">지메일</a>
+                    <a class="github-button" href="https://github.com/wltjd1688">깃허브</a>
+                    <a class="velog-button" href="https://velog.io/@wltjd1688/posts">빌로그</a>
+                    <a class="gmail-button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=wltjd1688" target="_blank">지메일</a>
                 </div>
             </div>
         </footer>
